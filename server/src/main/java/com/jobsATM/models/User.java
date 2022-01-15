@@ -1,9 +1,6 @@
 package com.jobsATM.models;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
+import javax.persistence.*;
 
 public class User {
     @Id
@@ -26,6 +23,7 @@ public class User {
     private String specialization;
     private String role;
 
+
     public User() {
     }
 
@@ -39,4 +37,3 @@ public class User {
         this.role = role;
     }
 }
-

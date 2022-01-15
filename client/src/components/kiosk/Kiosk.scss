@@ -1,0 +1,48 @@
+
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+
+.kiosk {
+    .logo {
+        position: relative;
+        width: 120px;
+        // box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .icon {
+        width: 100px;
+    }
+
+    .employee > *, .employer > * {
+        margin: 30px;
+    }
+    
+    p {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    
+    h1 {
+        font-weight: bold;
+        font-size: 3rem;
+    }
+
+    button {
+        padding: 10px 30px;
+        border: none;
+        color: rgb(48, 67, 54);
+        background-color: rgb(246, 238, 238);
+        border-radius: 8px;
+        font-size: 1.2rem;
+        transition: 0.2s all ease;
+    }
+    
+    button:hover {
+        transform: scale(1.05);
+    }
+    
+}
+
