@@ -5,21 +5,22 @@ import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Kiosk from './components/kiosk/Kiosk';
+import Admin from './components/admin/Admin';
+import Signup from './components/signup/Signup';
 
-ReactDOM.render
-(
+ReactDOM.render(
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<App />} />
-                {/* <Route index element={<Home />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/signup" element={<Signup />} />
+            {/* <Route index element={<Home />} />
                 <Route path="teams" element={<Teams />}>
                     <Route path=":teamId" element={<Team />} />
                     <Route path="new" element={<NewTeamForm />} />
                     <Route index element={<LeagueStandings />} />
                 </Route> */}
-
-            <Route path="/kiosk" element={<Kiosk />} />
+            {/* <Route path="/kiosk" element={<Kiosk />} /> */}
         </Routes>
     </BrowserRouter>,
     document.getElementById('root')
