@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
-@RequestMapping("v1/api/jobs")
+@RequestMapping("v1/api/job")
 public class JobController {
 
     private final JobService jobService;
@@ -24,7 +24,7 @@ public class JobController {
     }
 
 
-    @GetMapping("")
+    @GetMapping("/all")
     public List<Job> getAllJobs() {
         return jobService.getAllJobs();
 //        return Arrays.asList(new Job("Frontend developer", "Best salary in town!"));

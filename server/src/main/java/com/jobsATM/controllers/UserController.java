@@ -2,6 +2,7 @@ package com.jobsATM.controllers;
 
 import com.jobsATM.models.Job;
 import com.jobsATM.models.User;
+import com.jobsATM.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -73,9 +74,20 @@ public class UserController {
 //                + "Image URL: " + image + "\n";
 //    }
 
+    private final UserService userService;
+
+    @Autowired
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
 
     @GetMapping("")
     public String toString() {
+        return "User API";
+    }
+
+    @GetMapping("/all")
+    public String getAllUsers() {
         return "got all users";
     }
 }

@@ -14,9 +14,9 @@ const Jobs = () => {
     const [jobList, setJobList] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8910/v1/api/jobs')
+        axios.get('http://localhost:8910/v1/api/job/all')
             .then(res => {
-                console.log(res.data);
+                // console.log(res.data);
                 setJobList(res.data);     
             })
             .catch(e => console.log(e));
@@ -28,13 +28,6 @@ const Jobs = () => {
             <div className="container mt-5">
                 <h1>All jobs</h1>
                 <div className="d-flex bd-highlight mt-4 flex-wrap justify-content-start">
-                    {/* <JobCard details={jobDetails} />
-                    <JobCard details={jobDetails} />
-                    <JobCard details={jobDetails} />
-                    <JobCard details={jobDetails} />
-                    <JobCard details={jobDetails} />
-                    <JobCard details={jobDetails} />
-                    <JobCard details={jobDetails} /> */}
                     {jobList.map(job => <JobCard key={job.id} details={job} />)}
                 </div>
             </div>

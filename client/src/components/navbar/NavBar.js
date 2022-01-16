@@ -39,6 +39,7 @@ const NavBar = () => {
                                     Accounting
                                 </NavDropdown.Item>
                             </NavDropdown>
+                            <Nav.Link href="/admin">Admin</Nav.Link>
                         </Nav>
                         <Form className="d-flex" variant="dark">
                             <Nav.Item>
