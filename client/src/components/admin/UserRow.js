@@ -31,11 +31,11 @@ const UserRow = (props) => {
     return (
         <tr>
             <td>{id}</td>
-            <td>{!inEditMode ? nameInp : <input type="text" value={nameInp} onChange={(e) => setNameInp(e.target.value)} />}</td>
-            <td>{!inEditMode ? locationInp : <input type="text" value={locationInp} onChange={(e) => setLocationInp(e.target.value)} />}</td>
-            <td>{!inEditMode ? companyInp : <input type="text" value={companyInp} onChange={(e) => setCompanyInp(e.target.value)} />}</td>
-            <td>{!inEditMode ? specializationInp : <input type="text" value={specializationInp} onChange={(e) => setSpecializationInp(e.target.value)} />}</td>
-            <td>{!inEditMode ? roleInp : <input type="text" value={roleInp} onChange={(e) => setRoleInp(e.target.value)} />}</td>
+            <td>{!inEditMode ? nameInp : <input size={15} type="text" value={nameInp} onChange={(e) => setNameInp(e.target.value)} />}</td>
+            <td>{!inEditMode ? locationInp : <input size={15} type="text" value={locationInp} onChange={(e) => setLocationInp(e.target.value)} />}</td>
+            <td>{!inEditMode ? companyInp : <input size={20} type="text" value={companyInp} onChange={(e) => setCompanyInp(e.target.value)} />}</td>
+            <td>{!inEditMode ? specializationInp : <input size={20} type="text" value={specializationInp} onChange={(e) => setSpecializationInp(e.target.value)} />}</td>
+            <td>{!inEditMode ? roleInp : <input size={10} type="text" value={roleInp} onChange={(e) => setRoleInp(e.target.value)} />}</td>
             <td>
                 <Button variant="secondary" onClick={toggleEditMode}>{!inEditMode ? 'Edit' : 'Save'}</Button>{' '}
                 <Button variant="danger" onClick={onDeleteHandler}>Delete</Button>
