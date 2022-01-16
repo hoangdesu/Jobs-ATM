@@ -1,6 +1,9 @@
 # Jobs ATM
 
+![JobsATM frontpage](./assets/frontpage.jpg)
+
 ## About this project
+
 
 Jobs ATM is a full-fledge, fullstack application that allows job-seekers and recruiters to connect with each other. It's the personal project of Hoang Nguyen.
 
