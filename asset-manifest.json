@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Jobs-ATM/static/css/main.795111f6.css",
+    "main.js": "/Jobs-ATM/static/js/main.6bb7de12.js",
+    "static/media/employer.jpg": "/Jobs-ATM/static/media/employer.fa4f9a060ac51a8a27b8.jpg",
+    "static/media/employee.jpg": "/Jobs-ATM/static/media/employee.f2dc9e8f33727863d213.jpg",
+    "static/media/logo.png": "/Jobs-ATM/static/media/logo.eebefb9d3d88e46b1ca7.png",
+    "static/media/employee-icon.png": "/Jobs-ATM/static/media/employee-icon.ffc0a57b2fb536c99af3.png",
+    "static/media/employer-icon.png": "/Jobs-ATM/static/media/employer-icon.b7923f26af35ca236e49.png",
+    "index.html": "/Jobs-ATM/index.html",
+    "main.795111f6.css.map": "/Jobs-ATM/static/css/main.795111f6.css.map",
+    "main.6bb7de12.js.map": "/Jobs-ATM/static/js/main.6bb7de12.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.795111f6.css",
+    "static/js/main.6bb7de12.js"
+  ]
+}
