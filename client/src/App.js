@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import logo from './assets/logo.png';
 import employeeBG from './assets/employee.jpg';
 import employerBG from './assets/employer.jpg';
@@ -64,7 +66,7 @@ const App = () => {
                     fontWeight: 'bold'
                 }}
             >
-                <img src={logo} alt="logo" className="kiosk logo" />
+                <Link to="/jobs"><img src={logo} alt="logo" className="kiosk logo" /></Link>
                 {/* <h2>Jobs ATM</h2> */}
             </div>
 

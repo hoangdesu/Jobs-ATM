@@ -10,6 +10,3 @@
 ## Backend
 - Postgres: create database `jobsatm`
 
-## Endpoints
-Frontend
-- Kiosk: http://localhost:3456/kiosk

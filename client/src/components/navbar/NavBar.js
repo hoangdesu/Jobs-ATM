@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     Container,
     Navbar,
@@ -8,8 +8,10 @@ import {
     FormControl,
     Button,
 } from 'react-bootstrap';
+import LoginModal from '../modals/LoginModal';
 
 const NavBar = () => {
+    const [modalShow, setModalShow] = useState(false);
     return (
         <div>
             <Navbar bg="dark" expand="lg" variant="dark">
@@ -39,6 +41,12 @@ const NavBar = () => {
                             </NavDropdown>
                         </Nav>
                         <Form className="d-flex" variant="dark">
+                            <Nav.Item>
+                                <Nav.Link onClick={(() => setModalShow(true))}>Login</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link href="/signup">Signup</Nav.Link>
+                            </Nav.Item>
                             <FormControl
                                 type="search"
                                 placeholder="Job search"
@@ -50,6 +58,12 @@ const NavBar = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+
+            <LoginModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                category={{}}
+            />
         </div>
     );
 };

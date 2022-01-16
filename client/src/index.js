@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Admin from './components/admin/Admin';
 import Signup from './components/signup/Signup';
+import Jobs from './components/jobs/Jobs';
 
 ReactDOM.render(
     <BrowserRouter>
@@ -14,6 +15,7 @@ ReactDOM.render(
             <Route path="/" element={<App />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/jobs" element={<Jobs />} />
             {/* <Route index element={<Home />} />
                 <Route path="teams" element={<Teams />}>
                     <Route path=":teamId" element={<Team />} />

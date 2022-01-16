@@ -3,7 +3,6 @@ import { Modal, Button } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 
 function LoginModal(props) {
-    const [,] = useState();
     const emailRef = useRef(null);
     const pwdRef = useRef(null);
     const navigate = useNavigate();
@@ -11,7 +10,7 @@ function LoginModal(props) {
     const onFormSubmitHandler = (e) => {
         e.preventDefault();
         console.log(' :D');
-        navigate('/admin');
+        navigate('/jobs');
     };
 
     return (
@@ -27,8 +26,8 @@ function LoginModal(props) {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <h4>For {props.category.name}</h4>
-                <p>{props.category.description}</p>
+                <h4>{props.category.name ? `For ${props.category.name}` : 'Please login to continue'}</h4>
+                <p>{props.category.description || ''}</p>
                 <form onSubmit={onFormSubmitHandler}>
                     <div className="form-group">
                         <label htmlFor="exampleInputEmail1">Username</label>
